@@ -1,0 +1,22 @@
+#menyu {
+    width: 50px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+#menyu div {
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 8px
+}
+
+@media(min-width: 650px) {
+    #menyu {
+        display: none
+    }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css.map">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                maxWidth: {
+                    'max-650': '600px',
+                    'max-445': '445px',
+                    'max-100%': '100%',
+                    'max-256': '270px',
+                    'max-157': '157px',
+                },
+                extend: {
+                    height: {
+                        'max-h': '450px',
+                    },
+                    width: {
+                        'w-327': '327px',
+                    },
+                    spacing: {
+                        'pt450': '450px',
+                    },
+                    // maxHeight: {
+                    //     'max-h': '450px',
+                    // },
+                    lineHeight: {
+                        'line': '70px',
+                        "line48": "48px",
+                    },
+                    container: {
+                        padding: {
+                            xsm: '10px',
+                            sm: '10px',
+                            lg: '10px',
+                            xl: '10px',
+                        },
+                        screens: {
+                            xsm: '375px',
+                            sm: '650px',
+                            lg: '900px',
+                            xl: '1110px',
+
+                        },
+                    },
+                    screens: {
+                        xsm: '375px',
+                        sm: '650px',
+                        lg: '900px',
+                        xl: '1110px',
+
+                    },
+                    backgroundImage: {
+                        'body-bg': "url('./image/bg-rasam.png')",
+                        'yer': "url('./image/yer.png')",
+                        'bg-night': "url('./image/100.png')",
+                        'futbol': "url('./image/futbol.png')",
+                        'mashina': "url('./image/mashina.png')",
+                        'yul': "url('./image/yul.png')",
+                        'qutub': "url('./image/qutub.png')",
+                        'raketa': "url('./image/raketa.png')",
+                        'ushadaee': "url('./image/ushadaee.png')",
+                    },
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    // fontFamily: {
+                    //     'family': ['Josefin Sans', sans-serif],
+                    // },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-body-bg bg-no-repeat  bg-top ">
+    <header>
+        <div class="container mx-auto flex justify-between items-center pt-16">
+            <div class="text-white">
+                <img src="./image/logo.png" alt="komponiya logosi">
+            </div>
+            <div class="text-white sm:block xsm:hidden relative">
+                <ul class="flex gap-x-8 font-normal text-base leading-6 ">
+                    <li class="hover:text-orange-600"><a href="./index.html">About</a></li>
+                    <li class="hover:text-orange-600"><a href="./index.html">Careers</a></li>
+                    <li class="hover:text-orange-600"><a href="./index.html">Events</a></li>
+                    <li class="hover:text-orange-600"><a href="./index.html">Products</a></li>
+                    <li class="hover:text-orange-600"><a href="./index.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="sm:hidden  xsm:block" id="menyu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <!-- <div class="opacity-2">
+                <div>
+                    <h3 class="text-4xl text-white  font-extrabold  cursor-pointer hover:opacity-40">Loopstudios</h3>
+                </div>
+                <div >
+                    <ul class="text-white text-2xl">
+                        <li><a href="./index.html">About</a></li>
+                        <li><a href="./index.html">Careers</a></li>
+                        <li><a href="./index.html">Events</a></li>
+                        <li><a href="./index.html">Products</a></li>
+                        <li><a href="./index.html">Support</a></li>
+                    </ul>
+                </div>
+            </div> -->
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container mx-auto my-32">
+                <div class="max-w-max-650  border-2 border-solid border-white">
+                    <h1 class="text-6xl text-white font-light leading-line  py-8 mx-2">IMMERSIVE EXPERIENCES <br> THAT
+                        DELIVER</h1>
+                </div>
+            </div>
+            <div class="container mx-auto sm:pt-40 grid xsm:grid-cols-1 lg:grid-cols-2 gap-x-40">
+                <div class="mx-auto">
+                    <img class="max-w-max-100%" src="./image/imgggggg.png" alt="this is stayle" width="880"
+                        height="500">
+                </div>
+                <div class="max-w-max-445 mt-20 mx-auto xsm:text-center lg:text-start">
+                    <h3 class="text-5xl font-light leading-line48">The leader in interactive VR</h3>
+                    <p class="text-gray-500 text-base font-normal mt-5">
+                        Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of
+                        the best companies around the globe. Our award-winning creations have transformed businesses
+                        through digital experiences that bind to their brand.
+                    </p>
+                </div>
+            </div>
+            <div class="container mx-auto flex items-center justify-between mt-40">
+                <div>
+                    <h2 class="text-5xl font-light ">OUR CREATIONS</h2>
+                </div>
+                <div
+                    class=" xsm:hidden sm:block  border-2 border-solid border-black py-3 px-11 hover:bg-black hover:text-white cursor-pointer active:bg-slate-500">
+                    SEE ALL
+                </div>
+            </div>
+            <div class="container mx-auto mt-20">
+                <div class="grid mx-auto lg:grid-cols-4  sm:grid-cols-2 xsm:grid-cols-1     xsm:gap-x-8 xsm:gap-y-6">
+                    <div class="mx-auto bg-yer sm:w-64 xsm:w-w-327   bg-no-repeat bg-cover object-fill text-white">
+                        <h4 class=" pt-pt450 pb-8 text-3xl pl-10 font-light">DEEP <br> EARTH</h4>
+                    </div>
+                    <div class="mx-auto bg-bg-night sm:w-64 xsm:w-w-327   bg-no-repeat bg-cover object-fill text-white">
+                        <h4 class="pt-pt450 pb-8 text-3xl pl-10 font-light">NIGHT <br> ARCADE</h4>
+                    </div>
+                    <div class="mx-auto bg-futbol sm:w-64 xsm:w-w-327   bg-no-repeat bg-cover object-fill text-white">
+                        <h4 class="pt-pt450 pb-8 text-3xl pl-10 font-light">SOCCER <br> TEAM VR</h4>
+                    </div>
+                    <div class="mx-auto bg-mashina sm:w-64 xsm:w-w-327   bg-no-repeat bg-cover object-fill text-white">
+                        <h4 class="pt-pt450 pb-8 text-3xl pl-10 font-light">THE <br> GRID</h4>
+                    </div>
+                    <div class="mx-auto bg-ushadaee sm:w-64 xsm:w-w-327   bg-no-repeat bg-cover object-fill text-white">
+                        <h4 class="pt-pt450 pb-8 text-3xl pl-10 font-light">FROM UP <br> ABOVE VR</h4>
+                    </div>
+                    <div class="mx-auto bg-raketa  sm:w-64 xsm:w-w-327   bg-no-repeat bg-cover object-fill text-white">
+                        <h4 class="pt-pt450 pb-8 text-3xl pl-10 font-light">POCKET <br> BOREALIS </h4>
+                    </div>
+                    <div class="mx-auto bg-qutub sm:w-64 xsm:w-w-327   bg-no-repeat bg-cover object-fill text-white">
+                        <h4 class="pt-pt450 pb-8 text-3xl pl-10 font-light"> THE <br> CURIOSITY</h4>
+                    </div>
+                    <div class="mx-auto bg-yul sm:w-64 xsm:w-w-327   bg-no-repeat bg-cover object-fill text-white">
+                        <h4 class="pt-pt450 pb-8 text-3xl pl-10 font-light">MAKE IT <br> FISHEYE</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="container mx-auto mt-8">
+                <div
+                    class="sm:hidden  max-w-max-157 mx-auto border-2 border-solid border-black py-3 px-11 hover:bg-black hover:text-white cursor-pointer active:bg-slate-500">
+                    SEE ALL
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-black mt-32">
+        <div class="container mx-auto text-white pt-11">
+            <div class="grid sm:grid-cols-2 gap-x-96 text-center xsm:mx-auto">
+                <div>
+                    <h3 class="text-4xl  font-extrabold opacity-1 cursor-pointer hover:opacity-40">Loopstudios</h3>
+                </div>
+                <div class="flex gap-x-4 xsm:mx-auto xsm:mt-3">
+                    <a href="https://www.instagram.com/"><img src="./image/fecoobok.svg" alt="instagram ikonkasi"></a>
+                    <a href="https://phantom.app/"><img src="./image/twitter2.svg" alt=""></a>
+                    <a
+                        href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicnUifQ%3D%3D%22%7D"><img
+                            src="./image/blmadm.svg" alt=""></a>
+                    <a href="https://www.facebook.com/watch/live/?ref=live_delegate"><img src="./image/instagram2.svg"
+                            alt=""></a>
+                </div>
+            </div>
+            <div class="grid lg:grid-cols-2 xsm:grid-cols-1 xsm:text-center    items-center py-6">
+                <div class="text-white sm:block relative">
+                    <ul class="grid sm:grid-cols-5 xsm:gap-x-8 gap-y-4 lg:gap-x-2 font-normal text-base leading-6 ">
+                        <li class="hover:text-orange-600"><a href="./index.html">About</a></li>
+                        <li class="hover:text-orange-600"><a href="./index.html">Careers</a></li>
+                        <li class="hover:text-orange-600"><a href="./index.html">Events</a></li>
+                        <li class="hover:text-orange-600"><a href="./index.html">Products</a></li>
+                        <li class="hover:text-orange-600"><a href="./index.html">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="opacity-40 mt-4">© 2021 Loopstudios. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
