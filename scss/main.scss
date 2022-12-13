@@ -1,4 +1,4 @@
-#menyu{
+.menyu{
     width: 50px;
     height: 40px;
     display: flex;
@@ -16,7 +16,7 @@
 }
 
 @media ( min-width:650px) {
-    #menyu{
+    .menyu{
         display: none;
     }
 }
